@@ -11,7 +11,9 @@ export class PostListComponent implements OnInit {
   @Input() content: string ;
   @Input() loveIts: number;
   @Input() created_at: Date;
-  constructor() {}
+  constructor() {
+    this.created_at = new Date();
+  }
 
   ngOnInit() {
   }
